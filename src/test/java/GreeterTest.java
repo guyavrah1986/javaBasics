@@ -8,7 +8,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class GreeterUnitTests {
+import hello.Greeter;
+
+class GreeterTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -27,11 +29,11 @@ class GreeterUnitTests {
 	}
 
 	@Test
-	void testGreeterWithNegativeNum()
+	void testaddPositiveNumWithNegativeNumAsAnInput() 
 	{
 		int num = 10;
 		Greeter greeter = new Greeter();
-		assertEquals(num, greeter.addPositiveNum(num, -1));
+		assertEquals(num, greeter.addPositiveNum(num, -2));
 	}
 
 }
